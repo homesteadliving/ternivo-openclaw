@@ -1,4 +1,4 @@
-name: ClawHub Package Validation
+name: ClawHub Skill Validation
 
 on:
   push:
@@ -8,13 +8,12 @@ on:
   workflow_dispatch:
 
 permissions:
-  actions: read
   contents: read
   id-token: write
 
 jobs:
   validate:
-    uses: openclaw/clawhub/.github/workflows/package-publish.yml@v0.23.3
+    uses: openclaw/clawhub/.github/workflows/skill-publish.yml@v0.23.3
     with:
+      skill_path: skills/ternivo-connect
       dry_run: true
-      version: 1.0.0
