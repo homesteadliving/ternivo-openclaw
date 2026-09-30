@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ternivo-openclaw",
+  "version": "1.0.0",
+  "description": "Ternivo Connect for OpenClaw: authenticated social delivery through a remote MCP server with preflight, approval policy, terminal verification, retries, diagnostics and analytics.",
+  "author": {
+    "name": "Ternivo, LLC",
+    "url": "https://ternivo.app"
+  },
+  "homepage": "https://ternivo.app/social-delivery",
+  "repository": "https://github.com/homesteadliving/ternivo-openclaw",
+  "keywords": [
+    "openclaw",
+    "mcp",
+    "social-media",
+    "social-publishing",
+    "automation",
+    "ternivo"
+  ]
+}
