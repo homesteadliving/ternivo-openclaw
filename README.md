@@ -22,7 +22,7 @@ Ternivo keeps social-provider credentials server-side. The OpenClaw agent authen
 With OpenClaw installed:
 
 ```bash
-openclaw plugins install https://github.com/homesteadliving/ternivo-openclaw
+openclaw plugins install git:github.com/homesteadliving/ternivo-openclaw
 openclaw plugins inspect ternivo-openclaw
 ```
 
@@ -80,7 +80,14 @@ clawhub login
 clawhub package publish homesteadliving/ternivo-openclaw
 ```
 
-Use `--dry-run` first when publishing from a new ClawHub account.
+Preview first, then publish:
+
+```bash
+clawhub package publish homesteadliving/ternivo-openclaw --dry-run
+clawhub package publish homesteadliving/ternivo-openclaw
+```
+
+ClawHub requires a one-time publisher login before the publish command.
 
 ## Links
 
