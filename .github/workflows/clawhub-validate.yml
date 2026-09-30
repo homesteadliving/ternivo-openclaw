@@ -17,5 +17,4 @@ jobs:
     uses: openclaw/clawhub/.github/workflows/package-publish.yml@v0.23.3
     with:
       dry_run: true
-      family: bundle-plugin
       version: 1.0.0
