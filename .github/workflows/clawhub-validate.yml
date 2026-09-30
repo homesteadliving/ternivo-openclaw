@@ -18,3 +18,4 @@ jobs:
     with:
       dry_run: true
       family: bundle-plugin
+      version: 1.0.0
