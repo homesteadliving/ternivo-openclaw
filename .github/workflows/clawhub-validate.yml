@@ -1,10 +1,9 @@
-name: ClawHub Skill Validation
+name: ClawHub Skill Publish
 
 on:
   push:
     branches:
       - main
-  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -12,8 +11,11 @@ permissions:
   id-token: write
 
 jobs:
-  validate:
+  publish:
     uses: openclaw/clawhub/.github/workflows/skill-publish.yml@v0.23.3
     with:
       skill_path: skills/ternivo-connect
-      dry_run: true
+      dry_run: false
+      tags: latest
+    secrets:
+      clawhub_token: ${{ secrets.CLAWHUB_TOKEN }}
