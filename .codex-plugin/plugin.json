@@ -1,0 +1,39 @@
+{
+  "name": "ternivo-openclaw",
+  "version": "1.0.0",
+  "description": "Ternivo Connect for OpenClaw: authenticated social delivery through a remote MCP server with preflight, approval policy, terminal verification, retries, diagnostics and analytics.",
+  "author": {
+    "name": "Ternivo, LLC",
+    "url": "https://ternivo.app"
+  },
+  "homepage": "https://ternivo.app/social-delivery",
+  "repository": "https://github.com/homesteadliving/ternivo-openclaw",
+  "license": "Proprietary",
+  "keywords": [
+    "ternivo",
+    "openclaw",
+    "mcp",
+    "social-media",
+    "social-publishing",
+    "automation"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Ternivo Connect",
+    "shortDescription": "Controlled social delivery through Ternivo MCP",
+    "longDescription": "Use Ternivo Connect to inspect social connection health and provider capabilities, preflight content, coordinate approved publishing and scheduling, verify terminal delivery, retry failed destinations, and diagnose provider issues without exposing raw social-provider credentials.",
+    "developerName": "Ternivo, LLC",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "websiteURL": "https://ternivo.app/social-delivery",
+    "privacyPolicyURL": "https://ternivo.app/connect/privacy.html",
+    "termsOfServiceURL": "https://ternivo.app/connect/terms.html",
+    "defaultPrompt": [
+      "Check my connected social accounts and tell me which are healthy and which need attention.",
+      "Preflight this social post across my connected destinations before publishing.",
+      "Show me the verified delivery status for my recent Ternivo posts."
+    ],
+    "brandColor": "#245775"
+  }
+}
